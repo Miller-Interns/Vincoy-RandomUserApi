@@ -46,7 +46,6 @@ export const useUserStore = defineStore('userStore', () => {
     users.value = [];
     localStorage.removeItem('users');
   }
-
   return {
     users,
     filteredUsers,

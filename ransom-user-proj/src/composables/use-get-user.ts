@@ -9,7 +9,7 @@ export function useGetUser() {
     const data = await res.json(); 
     users.value = data.results;
   };
-  
+
   return {
     users,
     getUsers, 

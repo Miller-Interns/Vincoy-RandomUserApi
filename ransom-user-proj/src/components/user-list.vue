@@ -42,11 +42,11 @@ onMounted(() => {
     getUsers(50).then(() => store.setUsers(users.value));
   }
 });
-
 const paginatedUsers = computed(() => store.getPaginatedUsers());
 const nextPage = store.nextPage;
 const backPage = store.backPage;
 const goToDetail = (uuid: string) => {
   router.push(`/user/${uuid}`);
 };
+
 </script>

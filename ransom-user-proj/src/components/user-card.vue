@@ -13,6 +13,7 @@ import type { User } from '@/types/RandomUserTypes';
 defineProps<{
   user: User;
 }>();
+
 </script>
 
 <style scoped>
