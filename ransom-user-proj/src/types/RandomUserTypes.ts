@@ -16,7 +16,6 @@ export interface User {
     uuid: string;
   };
 }
-
 export interface UserLocation {
   street: {
     number: number;

@@ -15,7 +15,6 @@ const routes = [
     component: UserDetail,
   },
 ];
-
 export const router = createRouter({
   history: createWebHistory(),
   routes,

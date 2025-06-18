@@ -17,4 +17,5 @@ import { useUserStore } from '@/composables/use-store.ts';
    const user = computed(() =>
    store.users.find(u => u.login.uuid === route.params.id)
 );
+
 </script>
