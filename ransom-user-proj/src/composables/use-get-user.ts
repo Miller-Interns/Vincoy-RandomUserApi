@@ -3,19 +3,15 @@ import type { User } from '@/types/RandomUserTypes';
 
 export function useGetUser() {
   const users = ref<User[]>([]);
-  const isLoading = ref(false);
   const getUsers = async (results = 20, gender = '') => {
-    isLoading.value = true;
     const url = `https://randomuser.me/api/?results=${results}${gender ? `&gender=${gender}` : ''}`;
     const res = await fetch(url); 
     const data = await res.json(); 
     users.value = data.results;
-    isLoading.value = false;
   };
   
   return {
     users,
-    isLoading,
     getUsers, 
   };
 }
